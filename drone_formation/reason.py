@@ -13,8 +13,7 @@ import numpy as np
 class FormationReasoner:
     def __init__(self):
         self.client = OpenAI(
-            api_key="sk-b279dca187df4d0f983c40ae5a218121",
-            #api_key=os.getenv("DEEPSEEK_API_KEY"),
+            api_key=os.getenv("DEEPSEEK_API_KEY"),
             base_url="https://api.deepseek.com"
         )
 
